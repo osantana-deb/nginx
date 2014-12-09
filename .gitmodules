@@ -7,3 +7,12 @@
 [submodule "debian/modules/headers-more-nginx-module"]
 	path = debian/modules/headers-more-nginx-module
 	url = https://github.com/openresty/headers-more-nginx-module.git
+[submodule "debian/modules/ngx_devel_kit"]
+	path = debian/modules/ngx_devel_kit
+	url = https://github.com/simpl/ngx_devel_kit.git
+[submodule "debian/modules/echo-nginx-module"]
+	path = debian/modules/echo-nginx-module
+	url = https://github.com/agentzh/echo-nginx-module
+[submodule "debian/modules/nginx-upstream-fair"]
+	path = debian/modules/nginx-upstream-fair
+	url = https://github.com/gnosek/nginx-upstream-fair

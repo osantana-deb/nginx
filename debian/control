@@ -1,8 +1,7 @@
 Source: nginx
 Section: httpd
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Maintainer: Osvaldo Santana Neto <osvaldo.neto@titansgroup.com.br>
 Uploaders: Jose Parrella <bureado@debian.org>,
            Fabio Tranchitella <kobold@debian.org>,
            Michael Lustfield <michael@lustfield.net>,
