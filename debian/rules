@@ -114,14 +114,14 @@ extras_configure_flags := \
 			--with-mail_ssl_module \
 			--add-module=$(MODULESDIR)/headers-more-nginx-module \
 			--add-module=$(MODULESDIR)/nginx-auth-pam \
-			--add-module=$(MODULESDIR)/nginx-cache-purge \
+			--add-module=$(MODULESDIR)/ngx_cache_purge \
 			--add-module=$(MODULESDIR)/nginx-dav-ext-module \
 			--add-module=$(MODULESDIR)/ngx_devel_kit \
-			--add-module=$(MODULESDIR)/nginx-echo \
+			--add-module=$(MODULESDIR)/echo-nginx-module \
 			--add-module=$(MODULESDIR)/ngx-fancyindex \
-			--add-module=$(MODULESDIR)/nginx-http-push \
+			--add-module=$(MODULESDIR)/nginx_http_push_module \
 			--add-module=$(MODULESDIR)/nginx-lua \
-			--add-module=$(MODULESDIR)/nginx-upload-progress \
+			--add-module=$(MODULESDIR)/nginx-upload-progress-module \
 			--add-module=$(MODULESDIR)/nginx-upstream-fair \
 			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
 
@@ -144,13 +144,13 @@ custom_configure_flags := \
 			--with-mail_ssl_module \
 			--add-module=$(MODULESDIR)/headers-more-nginx-module \
 			--add-module=$(MODULESDIR)/nginx-auth-pam \
-			--add-module=$(MODULESDIR)/nginx-cache-purge \
+			--add-module=$(MODULESDIR)/ngx_cache_purge \
 			--add-module=$(MODULESDIR)/nginx-dav-ext-module \
 			--add-module=$(MODULESDIR)/ngx_devel_kit \
-			--add-module=$(MODULESDIR)/nginx-echo \
+			--add-module=$(MODULESDIR)/echo-nginx-module \
 			--add-module=$(MODULESDIR)/ngx-fancyindex \
-			--add-module=$(MODULESDIR)/nginx-http-push \
-			--add-module=$(MODULESDIR)/nginx-upload-progress \
+			--add-module=$(MODULESDIR)/nginx_http_push_module \
+			--add-module=$(MODULESDIR)/nginx-upload-progress-module \
 			--add-module=$(MODULESDIR)/nginx-upstream-fair \
 			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module \
 			--add-module=$(MODULESDIR)/ngx_http_geoip2_module \
