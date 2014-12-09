@@ -1,1 +1,4 @@
 nginx-extras: spelling-error-in-binary usr/sbin/nginx tEH the
+
+# manpage is in package nginx-common
+nginx-extras: binary-without-manpage

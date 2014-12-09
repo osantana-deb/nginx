@@ -1,4 +1,13 @@
-nginx (1.6.2-4ubuntu1) vivid; urgency=medium
+nginx (1.6.2-4ubuntu2) trusty; urgency=low
+
+  * Upstream update
+    - Updated to nginx 1.6.2
+  * Add GeoIP2 module support
+  * Add LuaJIT module support
+
+ -- Osvaldo Santana Neto <osvaldo.neto@titansgroup.com.br>  Tue, 09 Dec 2014 10:42:00 -0300
+
+nginx (1.6.2-4ubuntu1) unstable; urgency=medium
 
   * Merge from Debian. Remaining changes: (LP: #1388621)
     - debian/patches/ubuntu-branding.patch: add Ubuntu branding

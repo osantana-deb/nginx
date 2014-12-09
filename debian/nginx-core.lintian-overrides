@@ -1,1 +1,4 @@
 nginx-core: spelling-error-in-binary usr/sbin/nginx tEH the
+
+# manpage is in package nginx-common
+nginx-core: binary-without-manpage

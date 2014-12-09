@@ -1,1 +1,4 @@
 nginx-full: spelling-error-in-binary usr/sbin/nginx tEH the
+
+# manpage is in package nginx-common
+nginx-full: binary-without-manpage

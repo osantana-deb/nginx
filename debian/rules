@@ -9,7 +9,7 @@ debian_ldflags:=$(shell dpkg-buildflags --get LDFLAGS)
 DEBIAN_NGINX_PERL_LDFLAGS:= $(debian_ldflags)
 export DEBIAN_NGINX_PERL_LDFLAGS
 
-FLAVOURS := core full light extras
+FLAVOURS := core full light extras custom
 
 MODULESDIR = $(CURDIR)/debian/modules
 BASEDIR = $(CURDIR)
@@ -124,6 +124,38 @@ extras_configure_flags := \
 			--add-module=$(MODULESDIR)/nginx-upload-progress \
 			--add-module=$(MODULESDIR)/nginx-upstream-fair \
 			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
+
+custom_configure_flags := \
+			$(common_configure_flags) \
+			--with-http_addition_module \
+			--with-http_dav_module \
+			--with-http_flv_module \
+			--with-http_geoip_module \
+			--with-http_gzip_static_module \
+			--with-http_image_filter_module \
+			--with-http_mp4_module \
+			--with-http_perl_module \
+			--with-http_random_index_module \
+			--with-http_secure_link_module \
+			--with-http_spdy_module \
+			--with-http_sub_module \
+			--with-http_xslt_module \
+			--with-mail \
+			--with-mail_ssl_module \
+			--add-module=$(MODULESDIR)/headers-more-nginx-module \
+			--add-module=$(MODULESDIR)/nginx-auth-pam \
+			--add-module=$(MODULESDIR)/nginx-cache-purge \
+			--add-module=$(MODULESDIR)/nginx-dav-ext-module \
+			--add-module=$(MODULESDIR)/nginx-development-kit \
+			--add-module=$(MODULESDIR)/nginx-echo \
+			--add-module=$(MODULESDIR)/ngx-fancyindex \
+			--add-module=$(MODULESDIR)/nginx-http-push \
+			--add-module=$(MODULESDIR)/nginx-upload-progress \
+			--add-module=$(MODULESDIR)/nginx-upstream-fair \
+			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module \
+			--add-module=$(MODULESDIR)/ngx_http_geoip2_module \
+			--add-module=$(MODULESDIR)/lua-nginx-module  # luajit openrest
+
 
 %:
 	dh $@ --with systemd
