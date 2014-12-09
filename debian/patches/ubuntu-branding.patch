@@ -1,0 +1,18 @@
+Description: Add Ubuntu token to NGINX_VER
+Author: Adam Conrad <adconrad@ubuntu.com>
+Forwarded: not-needed
+Last-Update: 2014-09-22
+
+Index: nginx-1.6.2/src/core/nginx.h
+===================================================================
+--- nginx-1.6.2.orig/src/core/nginx.h	2014-09-22 13:36:05.884229353 -0400
++++ nginx-1.6.2/src/core/nginx.h	2014-09-22 13:36:32.864230075 -0400
+@@ -11,7 +11,7 @@
+ 
+ #define nginx_version      1006002
+ #define NGINX_VERSION      "1.6.2"
+-#define NGINX_VER          "nginx/" NGINX_VERSION
++#define NGINX_VER          "nginx/" NGINX_VERSION " (Ubuntu)"
+ 
+ #define NGINX_VAR          "NGINX"
+ #define NGX_OLDPID_EXT     ".oldbin"
