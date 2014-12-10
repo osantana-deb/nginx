@@ -1,2 +1,5 @@
 .bzr
-
+debian/*.substvars
+debian/files
+debian/*.log
+debian/build-*

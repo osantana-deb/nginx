@@ -1,4 +1,4 @@
-nginx (1.6.2-4ubuntu2) trusty; urgency=low
+nginx (1.6.2-4titans1) trusty; urgency=low
 
   * Upstream update
     - Updated to nginx 1.6.2

@@ -19,10 +19,6 @@ README for Modules versions
   Homepage: https://github.com/agentzh/echo-nginx-module
   https://github.com/openresty/echo-nginx-module.git
 
- nginx-lua
-  Homepage: https://github.com/chaoslawful/lua-nginx-module
-  https://github.com/chaoslawful/lua-nginx-module.git
-
  nginx-upstream-fair
   Homepage: https://github.com/gnosek/nginx-upstream-fair
   https://github.com/gnosek/nginx-upstream-fair.git
@@ -50,4 +46,8 @@ README for Modules versions
  ngx_http_substitutions_filter_module
   Homepage: https://github.com/yaoweibin/ngx_http_substitutions_filter_module
   https://github.com/yaoweibin/ngx_http_substitutions_filter_module.git
+
+ lua-nginx-module (OpenREST / LuaJIT)
+  Homepage: https://github.com/openresty/lua-nginx-module
+  https://github.com/openresty/lua-nginx-module.git
 

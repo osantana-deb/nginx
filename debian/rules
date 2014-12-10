@@ -25,6 +25,11 @@ ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 	MAKEFLAGS += -j$(NUMJOBS)
 endif
 
+# LuaJIT
+DEB_HOST_MULTIARCH ?=$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+export LUAJIT_LIB=/usr/lib/$(DEB_HOST_MULTIARCH)
+export LUAJIT_INC=/usr/include/luajit-2.0
+
 # configure flags
 common_configure_flags := \
 			--with-cc-opt="$(debian_cflags)" \
@@ -120,7 +125,7 @@ extras_configure_flags := \
 			--add-module=$(MODULESDIR)/echo-nginx-module \
 			--add-module=$(MODULESDIR)/ngx-fancyindex \
 			--add-module=$(MODULESDIR)/nginx_http_push_module \
-			--add-module=$(MODULESDIR)/nginx-lua \
+			--add-module=$(MODULESDIR)/lua-nginx-module \
 			--add-module=$(MODULESDIR)/nginx-upload-progress-module \
 			--add-module=$(MODULESDIR)/nginx-upstream-fair \
 			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
@@ -154,7 +159,7 @@ custom_configure_flags := \
 			--add-module=$(MODULESDIR)/nginx-upstream-fair \
 			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module \
 			--add-module=$(MODULESDIR)/ngx_http_geoip2_module \
-			--add-module=$(MODULESDIR)/lua-nginx-module  # luajit openrest
+			--add-module=$(MODULESDIR)/lua-nginx-module
 
 
 %:
@@ -194,3 +199,4 @@ config.arch.%:
 
 clean.%:
 	rm -rf $(BUILDDIR_$*)
+
