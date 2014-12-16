@@ -51,3 +51,6 @@ README for Modules versions
   Homepage: https://github.com/openresty/lua-nginx-module
   https://github.com/openresty/lua-nginx-module.git
 
+ mod_zip
+  Homepage: https://github.com/evanmiller/mod_zip
+  https://github.com/evanmiller/mod_zip.git

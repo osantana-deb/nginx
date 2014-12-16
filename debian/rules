@@ -159,7 +159,8 @@ custom_configure_flags := \
 			--add-module=$(MODULESDIR)/nginx-upstream-fair \
 			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module \
 			--add-module=$(MODULESDIR)/ngx_http_geoip2_module \
-			--add-module=$(MODULESDIR)/lua-nginx-module
+			--add-module=$(MODULESDIR)/lua-nginx-module \
+			--add-module=$(MODULESDIR)/mod_zip
 
 
 %:

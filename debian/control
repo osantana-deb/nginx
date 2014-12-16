@@ -15,7 +15,6 @@ Build-Depends: autotools-dev,
                libexpat-dev,
                libgd2-dev | libgd2-noxpm-dev,
                libgeoip-dev,
-               liblua5.1-0-dev,
                libluajit-5.1-dev,
                libmhash-dev,
                libpam0g-dev,
@@ -26,7 +25,7 @@ Build-Depends: autotools-dev,
                po-debconf,
                zlib1g-dev,
                libmaxminddb-dev
-Standards-Version: 3.9.6.0
+Standards-Version: 3.9.5
 Homepage: http://nginx.net
 Vcs-Git: git://anonscm.debian.org/collab-maint/nginx.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/nginx.git;a=summary
