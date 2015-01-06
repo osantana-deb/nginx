@@ -1,8 +1,8 @@
-nginx (1.6.2-6) trusty; urgency=low
+nginx (1.6.2-6ppa1~precise1) precise; urgency=low
 
-  * Remove liblua (not jit) build requirement
+  * Add ppa1 suffix and precise serie information
 
- -- Osvaldo Santana Neto <osvaldo.neto@titansgroup.com.br>  Tue, 16 Dec 2014 15:46:00 -0300
+ -- Osvaldo Santana Neto <osvaldo.neto@titansgroup.com.br>  Mon, 6 Jan 2015 16:40:00 -0200
 
 nginx (1.6.2-5) trusty; urgency=low
 
